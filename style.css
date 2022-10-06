@@ -1,0 +1,63 @@
+/*  Color to use 
+    Green Color
+    #769656 
+    Cream Color
+    #EEEED2 
+*/
+
+body{
+    background: #252525;
+}
+
+.title{
+    color: wheat;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -6rem;
+    font-family: 'Montserrat';
+}
+
+
+.square{
+    background-color: #EEEED2;
+    width: 70px;
+    height: 70px;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    height: 560px;
+    /* 70px *8 = 560px*/
+    width: 560px;
+    border-radius: 5px;
+    overflow: hidden ;
+}
+
+.first-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9rem;
+    
+}
+
+.files:nth-of-type(odd) .square:nth-of-type(even){ 
+    background-color:  #769656;
+}
+
+.files:nth-of-type(even) .square:nth-of-type(odd){ 
+    background-color: #769656  ;
+}
+
+
+img{
+    width: 100%;
+}
+
+
+
+
+
+
